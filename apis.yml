@@ -1,8 +1,13 @@
 aid: baton-market
 name: Baton Market
-description: Baton Market is a company surfaced as a portfolio company of bloomberg-beta and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Baton Market (baton.com) is a modern online marketplace and technology-driven business
+  brokerage for buying and selling small businesses. It combines self-serve business listings with
+  M&A brokerage support, data-driven business valuations fueled by real financial data pulled from
+  accounting systems, buyer discovery and matching, NDA and deal workflows, and closing support.
+  The company positions itself as a lower-cost, faster alternative to traditional brokers, with the
+  claim that most of its listings close at roughly half the cost of a conventional broker. Baton is
+  backed by Bloomberg Beta. Baton Market has no publicly documented API, developer portal, or SDKs
+  at this time; this profile captures its public web, identity, and security surface.
 url: https://raw.githubusercontent.com/api-evangelist/baton-market/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +15,30 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://images.ctfassets.net/p2zgtwwed5ac/1ydIwQBucbvoBW6yfMt02r/5e572dcdf3e364285c522dedf73f9efd/Social_Thumb.webp
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Marketplace
+- Business Brokerage
+- Mergers and Acquisitions
+- Small Business
+- Business Valuation
+- Business For Sale
+- Deal Flow
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/baton-market-domain-security.yml
 - type: Website
-  url: https://www.batonmarket.com/
+  url: https://www.baton.com/
+- type: About
+  url: https://www.baton.com/about
+- type: Pricing
+  url: https://www.baton.com/pricing
+- type: Blog
+  url: https://www.baton.com/resources
+- type: SignUp
+  url: https://www.baton.com/market/signup
+- type: Login
+  url: https://www.baton.com/market/login
+- type: Support
+  url: https://baton.frontkb.com/en
+- type: TermsOfService
+  url: https://www.baton.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.baton.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/Baton-Market
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
